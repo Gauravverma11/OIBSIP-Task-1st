@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h3>✺Temp.Convertor</h3>
+            <p>By Gaurav</p>
+            <input class="search" type="text" placeholder="Search...">
+        </nav>
+    </header>
+    <main>
+        <h1 class="text">
+            <span id="fa" class="fa"></span>Temperature Convertor
+        </h1>
+    
+        <div class="container">
+            <form id="tempCalc" onsubmit="watchTemp(); return false">
+                <label for="temp">
+                    Please enter the Temperature.
+                </label>
+                <div class="row">
+                    <div class="col">
+                        <input type="number" step="any" id="temp" class="form-control" placeholder="Enter Temperature">
+                    </div>
+    
+                    <div class="col">
+                       <select name="temp_diff" id="temp_diff">
+                        <option value="cel">
+                            <span> &#176;</span>Celsius
+                        </option>
+    
+                        <option value="fah">
+                            <span> &#176;</span>Farenheit
+                        </option>
+    
+                       </select>
+                    </div>
+                    
+                </div>
+    
+                <button type="submit">Submit</button>
+                <span class="resultConainer"></span>
+            </form>
+        </div>
+    </main>
+    <footer>
+         <div class="contact">
+            <a href="#">Help</a>
+            <a href="#">Request & Suggestions</a>
+            <a href="#">Contact Us</a>
+         </div>
+         <div class="legal">
+            <a href="#">Legal Information & Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+         </div>
+         <div class="copyright">
+            <p> ©2024 GauravVerma All rights reserved. </p>
+         </div>
+
+    </footer>
+    
+</body>
+</html>
